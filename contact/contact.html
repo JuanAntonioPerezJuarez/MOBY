@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#00B8C8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Contacto - MOBY Inmobiliaria</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/contact.css">
+    <link rel="icon" type="image/x-icon" href="../images/icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../images/LogoOG.jfif" alt="MOBY Inmobiliaria" class="logo-img"></a>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Menú">
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+        </button>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../services/services.html">Servicios</a></li>
+                <li><a href="../properties/properties.html">Propiedades</a></li>
+                <li><a href="../contact/contact.html" class="active">Contacto</a></li>
+                <li><a href="../partners/partners.html">Socios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Estamos aquí para ayudarte</h1>
+            <p>Comunícate con nosotros para encontrar tu hogar ideal o para cualquier consulta inmobiliaria</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="icon-container">
+                        <i class="fas fa-map-marker-alt fa-lg"></i>
+                    </div>
+                    <h3>Visítanos</h3>
+                    <p>Av. Empresarios 135-Piso 7 Int. C<br>Puerta de Hierro, 45116 Zapopan, Jal.</p>
+                    <a href="#map-section" class="btn-architect small">
+                        <span class="btn-text">Ver en mapa</span>
+                        <i class="fas fa-arrow-right btn-icon"></i>
+                    </a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="icon-container">
+                        <i class="fas fa-envelope fa-lg"></i>
+                    </div>
+                    <h3>Escríbenos</h3>
+                    <p>dario.rodriguez@moby.com.mx</p>
+                    <a href="mailto:dario.rodriguez@moby.com.mx" class="btn-architect small">
+                        <span class="btn-text">Enviar email</span>
+                        <i class="fas fa-envelope btn-icon"></i>
+                    </a>
+                </div>
+                
+                <div class="contact-card whatsapp-card">
+                    <div class="icon-container">
+                        <i class="fab fa-whatsapp fa-lg"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>+52 3338067607<br>Respuesta inmediata</p>
+                    <a href="https://wa.me/523338067607" class="btn-architect small">
+                        <span class="btn-text">Chatear ahora</span>
+                        <i class="fab fa-whatsapp btn-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Contáctenos</h2>
+                    <p>Completa el formulario y nos pondremos en contacto contigo lo antes posible</p>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" placeholder="Tu nombre completo">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="tu@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" placeholder="+52 55 1234 5678">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interest">Interés</label>
+                        <select id="interest">
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="compra">Comprar propiedad</option>
+                            <option value="venta">Vender propiedad</option>
+                            <option value="renta">Rentar propiedad</option>
+                            <option value="inversion">Inversión inmobiliaria</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" rows="5" placeholder="Cuéntanos más sobre lo que estás buscando..."></textarea>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <button type="submit" class="btn-architect">
+                            <span class="btn-text">Enviar mensaje</span>
+                            <i class="fas fa-paper-plane btn-icon"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media-section">
+        <div class="container">
+            <h2>Síguenos en redes sociales</h2>
+            <p>Mantente al día con nuestras últimas propiedades, consejos inmobiliarios y eventos</p>
+            
+            <div class="social-grid">
+                <a href="https://www.facebook.com/people/Moby-Inmobiliaria/61579193160426/" class="social-card facebook" target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook-f fa-lg"></i>
+                    </div>
+                    <h3>Facebook</h3>
+                    <p>Moby Inmobiliaria</p>
+                </a>
+                
+                <a href="https://www.instagram.com/moby_inmobiliaria/" class="social-card instagram" target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>@moby_inmobiliaria</p>
+                </a>
+                
+                <a href="https://twitter.com/MOBY_Inmo" class="social-card twitter" target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <i class="fab fa-twitter fa-lg"></i>
+                    </div>
+                    <h3>Twitter</h3>
+                    <p>@MOBY_Inmo</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map-section" class="map-section">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11643.042470378787!2d-103.42410171157111!3d20.710485313302478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428af02bceaaaab%3A0x32881faa36d69d8d!2sTorre%20Skalia%2C%20Av.%20Empresarios%20135-Interior%207C%2C%20Puerta%20de%20Hierro%2C%2045116%20Zapopan%2C%20Jal.!5e1!3m2!1ses!2smx!4v1763776258263!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="../index.html"><img src="../images/moby.png" alt="MOBY Inmobiliaria"></a>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4><a href="../services/services.html">Servicios</a></h4>
+                    <ul>
+                        <li><a href="../properties/properties.html">Compra de Inmuebles</a></li>
+                        <li><a href="../properties/properties.html">Venta de Inmuebles</a></li>
+                        <li><a href="../properties/properties.html">Renta de Inmuebles</a></li>
+                        <li><a href="../services/services.html">Notaría</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4><a href="../contact/contact.html">Contacto</a></h4>
+                    <ul>
+                        <li><a href="mailto:dario.rodriguez@moby.com.mx">dario.rodriguez@moby.com.mx</a></li>
+                        <li><a href="tel:3338067607">33 3806 7607</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Síguenos</h4>
+                    <ul class="social-links">
+                        <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 MOBY. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="../script/main.js"></script>
+</body>
+</html>
